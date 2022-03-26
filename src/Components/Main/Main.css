@@ -21,3 +21,16 @@
      grid-template-columns:auto;
      }
 }
+@media (max-width:1000px) {
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
+
+@media (max-width:776px) {
+   .product-container{
+    display: grid;
+    grid-template-columns: auto;
+   } 
+}

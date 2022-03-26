@@ -5,6 +5,10 @@
     grid-gap: 20px;
     padding: 20px;
 }
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
 .sitebar-container{
     background-color: #E6E5E6;
     padding:15px;

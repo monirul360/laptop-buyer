@@ -1,0 +1,15 @@
+.header-container{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(214, 204, 204);
+    margin-bottom: 20px;
+}
+.header-container h1{
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.header-container p{
+    color: rgb(5, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -14,6 +14,17 @@ const Main = () => {
         setShow(newShow);
     }
 
+    const random = () => {
+        const select = document.getElementById("show-name-content");
+        select.textContent = '';
+        const create = document.createElement("p");
+        create.classList.add('random');
+        select.appendChild(create);
+        let showRendom = show[Math.floor(Math.random() * show.length)];
+        create.innerText = showRendom;
+
+    }
+
     const remove = () => {
         const select = document.getElementById("show-name-content");
         select.innerText = '';
@@ -34,15 +45,15 @@ const Main = () => {
                 <p>Selected Clothes </p>
                 <div id='show-name-content'>
                     {
-                        show.map(m => <p id='showName'>{m}</p>)
+                        show.map(show => <p id='showName' key={show}>{show}</p>)
                     }
                 </div>
-                <button id='chose1'>CHOOSE 1 FOR ME</button>
+                <button onClick={random} id='chose1'>CHOOSE 1 FOR ME</button>
                 <br />
 
                 <button onClick={remove} id='chose2'>CHOOSE AGAIN</button>
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Product.css';
 const Product = (props) => {
+    const { name, img } = props.product;
     return (
         <div className='product'>
-            <img src={props.product.img} alt="" />
-            <p>{props.product.name}</p>
+            <img src={img} alt="" />
+            <p>{name}</p>
             <div className='btn-group'>
-                <button>ADD TO CART &nbsp; <FontAwesomeIcon style={{ fontSize: "17px" }} icon={faShoppingCart} /></button>
+                <button onClick={() => props.click(props.product.name)}>ADD TO CART &nbsp; <FontAwesomeIcon style={{ fontSize: "17px" }} icon={faShoppingCart} /></button>
             </div>
         </div>
     );

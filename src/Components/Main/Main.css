@@ -9,10 +9,34 @@
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
 }
-.sitebar-container{
-    background-color: #E6E5E6;
+.Selected-container{
     padding:15px;
     border-radius: 10px;
+    height: fit-content;
+    background-color: #D6CCCC;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#showName{
+    background-color:black;
+    color: white;
+    padding: 5px;
+    margin:5px;
+    border-radius: 5px;
+}
+#chose1{
+    padding:8px;
+    margin: 5px;
+    color:green;
+    border-radius:4px;
+    border: none;
+}
+#chose2{
+    padding:8px;
+    margin: 5px;
+    color:purple;
+    border-radius:4px;
+    border: none;
 }
 
 @media (max-width:776px) {

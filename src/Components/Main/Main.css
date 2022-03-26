@@ -1,0 +1,19 @@
+.main-container{
+    background-color:#E6E5E6;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.sitebar-container{
+    background-color: #E6E5E6;
+    padding:15px;
+    border-radius: 10px;
+}
+
+@media (max-width:776px) {
+  .main-container{
+     display: grid;
+     grid-template-columns:auto;
+     }
+}

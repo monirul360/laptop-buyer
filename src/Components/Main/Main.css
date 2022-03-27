@@ -38,12 +38,19 @@
     border-radius:4px;
     border: none;
 }
+#chose1:hover{
+    background-color:wheat;
+}
 #chose2{
     padding:8px;
     margin: 5px;
     color:purple;
     border-radius:4px;
     border: none;
+}
+#chose2:hover{
+    background-color:blue;
+    color: white;
 }
 
 @media (max-width:776px) {

@@ -22,6 +22,10 @@
     position: absolute;
     bottom:7px;
 }
+.product button:hover{
+    background-color: orangered;
+    color: black;
+}
 .btn-group{
     margin-top:50px;
 }
